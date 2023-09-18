@@ -19,7 +19,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     allow do
       origins(%r{\Ahttp://localhost:\d+\z}, %r{\Ahttp://127.0.0.1:\d+\z})
   
-      resource '/random_greeting',
+      resource '/message/index',
                headers: :any,
                methods: %i[get options head]
     end
