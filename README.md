@@ -75,9 +75,6 @@ Install the dependencies using npm:
 bundler install
 ```
 
-```bash
-yarn install
-```
 
 
 ### Run tests
@@ -88,24 +85,12 @@ To run linters tests, run the following command:
   rubocop
 ```
 
-```bash
-npx stylelint "**/*.{css,scss}"
-```
-
 ### Run the app
-
-To run the app locally, make sure to comment out the following line in `config/puma.rb`:
-
-```bash
-which ruby
-
-provide the link of your ruby path inside /bin/dev
-```
 
 Then run the following command:
 
 ```bash
-./bin/dev
+    rails s
 ```
 
 <p align="right"><a href="#readme-top">👆</a></p>
